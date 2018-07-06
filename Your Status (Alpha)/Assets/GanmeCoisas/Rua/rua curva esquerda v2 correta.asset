@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: rua curva esquerda v2 correta
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 447cffe6484e3f548a671702c561f0e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61ee35657a3971a47975b0981739dd8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
