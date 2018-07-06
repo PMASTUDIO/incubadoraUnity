@@ -712,7 +712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5595cc13ded735349950133cc6f3b2b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.1
+  stop: 0
 --- !u!212 &1681961898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -764,7 +765,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1681961896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: -0.06, z: 0}
+  m_LocalPosition: {x: -8.15, y: 0, z: 0}
   m_LocalScale: {x: 0.17821953, y: 0.17649111, z: 0.103121884}
   m_Children: []
   m_Father: {fileID: 0}
@@ -785,6 +786,10 @@ MonoBehaviour:
   totalOfPointsText: {fileID: 1087688794}
   totalOfPoints: 5
   indicator: {fileID: 1888623182}
+  posistionMin: {x: -1.64, y: 0, z: 0}
+  posistionMax: {x: 1.54, y: 0, z: 0}
+  objectWithMoveEntityScript: {fileID: 1681961897}
+  timeToWaitIfPoint: 5
 --- !u!70 &1681961901
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
