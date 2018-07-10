@@ -94,6 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   self: {fileID: 50912809002863110}
   velocidade: 200
+  velocidadeCorrendo: 500
+  running: 0
 --- !u!212 &212567477049506664
 SpriteRenderer:
   m_ObjectHideFlags: 1
