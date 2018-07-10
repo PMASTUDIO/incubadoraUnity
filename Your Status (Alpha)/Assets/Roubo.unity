@@ -864,6 +864,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 50912809002863110, guid: d3128af00ef66e845ae75c0f742a4209,
         type: 2}
       propertyPath: m_CollisionDetection
@@ -887,6 +888,11 @@ Prefab:
     - target: {fileID: 114608834861529118, guid: d3128af00ef66e845ae75c0f742a4209,
         type: 2}
       propertyPath: velocidade
+=======
+    - target: {fileID: 114608834861529118, guid: d3128af00ef66e845ae75c0f742a4209,
+        type: 2}
+      propertyPath: velocidadeCorrendo
+>>>>>>> 28242973951dfef0d3e72a8d6f146e495ef57a5b
       value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []

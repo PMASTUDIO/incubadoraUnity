@@ -5,14 +5,17 @@ using UnityEngine;
 public class Andar : MonoBehaviour {
 	public Rigidbody2D self;
 	public float velocidade;
+    public float velocidadeCorrendo;
     private float xscale;
     private float yscale;
+    private float velocidadeTmp;
 
     public bool running = false;
     // basicamente, se vc apertar SHIFT essa função vai virar positiva.
 	
     // Use this for initialization
 	void Start () {
+        velocidadeTmp = velocidade;
 		self = GetComponent<Rigidbody2D>();
         xscale = transform.localScale.x;
         yscale = transform.localScale.y;
@@ -26,12 +29,14 @@ public class Andar : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftShift))
         {
             running = true;
+            velocidade = velocidadeCorrendo;
             //se segurar o shift esquerdo,o jogador estara correndo
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             running = false;
+            velocidade = velocidadeTmp;
             //se soltar o shift esquerdo,o jogador estara andando
         }
     }
