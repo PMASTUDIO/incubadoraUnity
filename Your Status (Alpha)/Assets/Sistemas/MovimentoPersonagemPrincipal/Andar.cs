@@ -104,4 +104,12 @@ public class Andar : MonoBehaviour {
             gameObject.GetComponent<Animator>().Play("Idle");
         }
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Parede")
+        {
+            print("HERPDERP");
+        }
+    }
 }
