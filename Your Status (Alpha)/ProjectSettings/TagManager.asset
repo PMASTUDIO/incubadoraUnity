@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - ball
-  - Miss
-=======
-  - focoV
->>>>>>> 70777bc3f98697e6f7a1498c8962a9d8452cab26
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - FocoV
+  - 
   - 
   - 
   - 

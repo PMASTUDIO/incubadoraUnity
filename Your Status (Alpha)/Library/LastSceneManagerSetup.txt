@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GanmeCoisas/GanmePlaygounrd.unity
+- path: Assets/lipe coisas/menu/menu.unity
   isLoaded: 1
   isActive: 1
