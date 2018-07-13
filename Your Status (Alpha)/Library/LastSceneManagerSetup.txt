@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/lipe coisas/menu/menu.unity
-=======
-- path: Assets/Scenes/Quests/Deliver.unity
->>>>>>> 333156bd426222ac31f5fc421ad20f212496e3c2
+- path: Assets/Roubo.unity
   isLoaded: 1
   isActive: 1
