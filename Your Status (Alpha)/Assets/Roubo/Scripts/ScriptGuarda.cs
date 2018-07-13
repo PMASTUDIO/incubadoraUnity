@@ -11,6 +11,11 @@ public class ScriptGuarda : MonoBehaviour {
     public bool frente = true;
     //Essa variavel vai servir pra verificar se ele esta de frente ou nao
 
+    public GameObject VisaoLado;
+    //As duas visoes vao ser box colliders por enquanto. Essa vai ser quando ele estiver de lado
+    public GameObject VisaoFrente;
+    //e essa vai ser o campo de visao quando ele estiver de frente;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -39,20 +44,30 @@ public class ScriptGuarda : MonoBehaviour {
             }
             //se ele estiver de lado, ficara de frente
 
-            Timer = 3;
+            Timer = 5;
             // o timer vai voltar pro seu valor original
         }
 
         if (frente == true)
         {
             ar.Play("GuardaFrente");
+            // se frente for verdadeiro, a sprite do guarda vai ser ele encarando para frente
+
+            VisaoFrente.SetActive(true);
+            //se ele estiver de frente (frente == true),a visao de frente sera ativada
+
+            VisaoLado.SetActive(false);
+            //e a de lado sera desativada
         }
-        // se frente for verdadeiro, a sprite do guarda vai ser ele encarando para frente
 
         else
         {
             ar.Play("GuardaDeLado");
+            // se nao, ele vai estar de lado
+
+            VisaoFrente.SetActive(false);
+            VisaoLado.SetActive(true);
+            //aqui eu simplesmente inverti o codigo
         }
-        // se nao, ele vai estar de lado
 	}
 }
