@@ -16,6 +16,11 @@ public class ScriptGuarda : MonoBehaviour {
     public GameObject VisaoFrente;
     //e essa vai ser o campo de visao quando ele estiver de frente;
 
+    public bool Alerta = false;
+
+    public GameObject isded;
+    public GameObject violin;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -48,26 +53,37 @@ public class ScriptGuarda : MonoBehaviour {
             // o timer vai voltar pro seu valor original
         }
 
-        if (frente == true)
-        {
-            ar.Play("GuardaFrente");
-            // se frente for verdadeiro, a sprite do guarda vai ser ele encarando para frente
+            if (frente == true)
+            {
+                ar.Play("GuardaFrente");
+                // se frente for verdadeiro, a sprite do guarda vai ser ele encarando para frente
 
-            VisaoFrente.SetActive(true);
-            //se ele estiver de frente (frente == true),a visao de frente sera ativada
+                if (Alerta == true)
+                {
+                    VisaoFrente.SetActive(true);
+                    //se ele estiver de frente (frente == true),a visao de frente sera ativada
 
-            VisaoLado.SetActive(false);
-            //e a de lado sera desativada
-        }
+                    VisaoLado.SetActive(false);
+                    //e a de lado sera desativada
+                }
+            }
 
         else
         {
             ar.Play("GuardaDeLado");
             // se nao, ele vai estar de lado
 
-            VisaoFrente.SetActive(false);
-            VisaoLado.SetActive(true);
-            //aqui eu simplesmente inverti o codigo
+            if (Alerta == true)
+            {
+                VisaoFrente.SetActive(false);
+                VisaoLado.SetActive(true);
+                //aqui eu simplesmente inverti o codigo
+            }
         }
 	}
+
+    public void EmGuarda()
+    {
+        Alerta = true;
+    }
 }
