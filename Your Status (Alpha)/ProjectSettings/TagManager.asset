@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - ball
+<<<<<<< HEAD
+  - Parede
+=======
+  - focoV
+  - SpawnPoint
+  - DeliveryPoint
+>>>>>>> 28242973951dfef0d3e72a8d6f146e495ef57a5b
+>>>>>>> 333156bd426222ac31f5fc421ad20f212496e3c2
   layers:
   - Default
   - TransparentFX
