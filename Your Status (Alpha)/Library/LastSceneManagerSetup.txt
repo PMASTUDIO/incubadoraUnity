@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Quests/Deliver.unity
+- path: Assets/Roubo.unity
   isLoaded: 1
   isActive: 1
