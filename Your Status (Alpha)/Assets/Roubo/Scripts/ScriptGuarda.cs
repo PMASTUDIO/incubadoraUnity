@@ -35,6 +35,8 @@ public class ScriptGuarda : MonoBehaviour {
         Animator ar = gameObject.GetComponent<Animator>();
         //definindo "ar" para o Animator
 
+        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
         if (Timer <= 0)
         {
             if (frente == true)
@@ -73,6 +75,8 @@ public class ScriptGuarda : MonoBehaviour {
             ar.Play("GuardaDeLado");
             // se nao, ele vai estar de lado
 
+            sr.flipX = true;
+
             if (Alerta == true)
             {
                 VisaoFrente.SetActive(false);
@@ -85,5 +89,6 @@ public class ScriptGuarda : MonoBehaviour {
     public void EmGuarda()
     {
         Alerta = true;
+        // essa funcao sera ativada quando o Jogador pegar o item. Isso significa que ele podera ser pego agora
     }
 }
