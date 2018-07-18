@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Goal
+<<<<<<< HEAD
   - ball
+=======
+  - Visao
+>>>>>>> 5fa1575b6024e01618eda931c1791c37e6cadfb3
   layers:
   - Default
   - TransparentFX
