@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Roubo.unity
-=======
-- path: Assets/Scenes/General/DayEnd.unity
->>>>>>> 445391888cb22aefd911a4836dd1539d1a089535
+- path: Assets/lipe coisas/CARA NA FRENTE de casa/mapa.unity
   isLoaded: 1
   isActive: 1
