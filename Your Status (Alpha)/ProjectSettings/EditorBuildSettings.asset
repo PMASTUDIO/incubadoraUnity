@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Roubo.unity
+    guid: 796f5cbabb6748d4d92146dbb254685c
+  - enabled: 1
+    path: Assets/Scenes/General/Fracassio.unity
+    guid: 51b779d4620442543af413c40dfc769f
+  - enabled: 1
+    path: Assets/lipe coisas/menu/menu.unity
+    guid: b77a273e956e5884e91d082d8a33e0f4

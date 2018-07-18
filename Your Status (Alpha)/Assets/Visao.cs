@@ -5,9 +5,9 @@ using UnityEngine;
 public class Visao : MonoBehaviour {
 
     public GameObject isded;
-    public GameObject violin;
     public GameObject Alertsong;
     public GameObject AlertSound;
+    public GameObject falaguarda;
 
 	// Use this for initialization
 	void Start () {
@@ -25,10 +25,14 @@ public class Visao : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             GameObject.Find("MainCharacter").GetComponent<Roubar>().Perdeste();
+            // se a visao colidir com o Jogador, a funcao Perdeste do player sera ativada, ou seja, ele nao podera sair da loja
+            GameObject.Find("Guarda").GetComponent<ScriptGuarda>().TheWorld();
+            //essa funcao do guarda serve pra congelar ele na posicao que ele esta, assim ele nao fica mudando de lado mesmo depois que o jogador foi pego
             isded.SetActive(true);
-            violin.SetActive(true);
             Alertsong.SetActive(false);
+            falaguarda.SetActive(true);
             AlertSound.SetActive(true);
+            // esses GameObjects sao so sons e a fala do guarda
         }
 
     }
