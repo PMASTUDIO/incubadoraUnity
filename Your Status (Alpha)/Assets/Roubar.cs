@@ -25,6 +25,9 @@ public class Roubar : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
+
+        Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
+
         if (other.gameObject.tag == "Goal")
         {
             // o Goal (que seria o alvo) tem uma colisão

@@ -6,6 +6,7 @@ public class Andar : MonoBehaviour {
 	public Rigidbody2D self;
 	public float velocidade;
     public float velocidadeCorrendo;
+    public bool canmove = true;
     private float xscale;
     private float yscale;
     private float velocidadeTmp;
@@ -24,20 +25,29 @@ public class Andar : MonoBehaviour {
 	// Update is called once per frame
     void Update()
     {
-        Move();
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (canmove == true)
         {
-            running = true;
-            velocidade = velocidadeCorrendo;
-            //se segurar o shift esquerdo,o jogador estara correndo
+            //tudo isso so podera acontecer se canmove = true
+
+            Move();
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                running = true;
+                velocidade = velocidadeCorrendo;
+                //se segurar o shift esquerdo,o jogador estara correndo
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                running = false;
+                velocidade = velocidadeTmp;
+                //se soltar o shift esquerdo,o jogador estara andando
+            }
         }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
-            running = false;
-            velocidade = velocidadeTmp;
-            //se soltar o shift esquerdo,o jogador estara andando
+            gameObject.GetComponent<Animator>().Play("Idle");
         }
     }
 
@@ -115,6 +125,15 @@ public class Andar : MonoBehaviour {
         if (other.gameObject.tag == "Parede")
         {
             print("HERPDERP");
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Visao")
+        {
+            canmove = false;
+            //se o jogador for visto, canmove sera falso, portanto ele nao podera se mecher
         }
     }
 }
