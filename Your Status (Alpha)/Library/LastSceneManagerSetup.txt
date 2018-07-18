@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/General/DayEnd.unity
+- path: Assets/Scenes/General/Family.unity
   isLoaded: 1
   isActive: 1
