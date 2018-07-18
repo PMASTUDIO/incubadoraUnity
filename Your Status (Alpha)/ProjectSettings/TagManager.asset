@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Goal
+  - DayEnder
+>>>>>>> 445391888cb22aefd911a4836dd1539d1a089535
   layers:
   - Default
   - TransparentFX
