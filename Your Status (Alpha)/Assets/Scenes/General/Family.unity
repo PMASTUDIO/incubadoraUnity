@@ -285,8 +285,9 @@ MonoBehaviour:
   Status: {fileID: 1691843210}
   panel: {fileID: 78765411}
   needsToBeAlive: 1
-  alerts: {fileID: 1073660667}
+  alerts: {fileID: 1757998528}
   rent: {fileID: 1770295877}
+  SceneContinueDay: mapa
 --- !u!1 &121993755
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +366,7 @@ GameObject:
   - component: {fileID: 122230275}
   - component: {fileID: 122230277}
   - component: {fileID: 122230276}
+  - component: {fileID: 122230278}
   m_Layer: 5
   m_Name: Son2
   m_TagString: Untagged
@@ -430,6 +432,33 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122230274}
+--- !u!114 &122230278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 122230274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72808d55f38f10243aefe4261b106a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bankAccount: {fileID: 1863686679}
+  Needs:
+  - School
+  - Food
+  - Potato
+  - Toys
+  - Hapiness
+  txtNeeds: {fileID: 1661516661}
+  Cost: {fileID: 1335174071}
+  payCosts: {fileID: 1987582550}
+  Status: {fileID: 350367016}
+  panel: {fileID: 1741460909}
+  needsToBeAlive: 1
+  alerts: {fileID: 1757998528}
+  rent: {fileID: 1770295877}
+  SceneContinueDay: mapa
 --- !u!1 &309473454
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +588,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dead
+  m_Text: '
+
+'
 --- !u!222 &350367017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -677,7 +708,7 @@ RectTransform:
   - {fileID: 989669202}
   - {fileID: 808966034}
   - {fileID: 1951732900}
-  - {fileID: 1073660666}
+  - {fileID: 1757998527}
   m_Father: {fileID: 1015306772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1020,7 +1051,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 802905365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 78765415}
+        m_MethodName: continueDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &802905365
@@ -1517,7 +1559,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '35
+  m_Text: '
 
 '
 --- !u!222 &1031296927
@@ -1600,80 +1642,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1047772950}
---- !u!1 &1073660665
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1073660666}
-  - component: {fileID: 1073660668}
-  - component: {fileID: 1073660667}
-  m_Layer: 5
-  m_Name: Alerts
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1073660666
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073660665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.528562, y: 11.528554, z: 11.528554}
-  m_Children: []
-  m_Father: {fileID: 428860474}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -5}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1073660667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073660665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 11
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 77
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1073660668
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073660665}
 --- !u!1 &1335174069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,7 +2169,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1730458002}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 122230278}
+        m_MethodName: PayCosts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1730458002
@@ -2321,6 +2300,7 @@ GameObject:
   - component: {fileID: 1741460910}
   - component: {fileID: 1741460912}
   - component: {fileID: 1741460911}
+  - component: {fileID: 1741460913}
   m_Layer: 5
   m_Name: Son1
   m_TagString: Untagged
@@ -2386,6 +2366,107 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741460909}
+--- !u!114 &1741460913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741460909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72808d55f38f10243aefe4261b106a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bankAccount: {fileID: 1863686679}
+  Needs:
+  - Medicines
+  - Potato
+  - College
+  - Arms
+  - 
+  txtNeeds: {fileID: 1661516661}
+  Cost: {fileID: 1335174071}
+  payCosts: {fileID: 1987582550}
+  Status: {fileID: 489743728}
+  panel: {fileID: 1741460909}
+  needsToBeAlive: 1
+  alerts: {fileID: 1757998528}
+  rent: {fileID: 1770295877}
+  SceneContinueDay: mapa
+--- !u!1 &1757998526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1757998527}
+  - component: {fileID: 1757998529}
+  - component: {fileID: 1757998528}
+  m_Layer: 5
+  m_Name: Alert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1757998527
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757998526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 428860474}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 30.7, y: -519.22}
+  m_SizeDelta: {x: 1768.4, y: 41.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1757998528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757998526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 37
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 44
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1757998529
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757998526}
 --- !u!1 &1770295875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,7 +2985,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1951732902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 78765415}
+        m_MethodName: payRent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1951732902
@@ -3015,7 +3107,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1987582551}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1741460913}
+        m_MethodName: PayCosts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1987582551
@@ -3266,7 +3369,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '----------------------------------------'
+  m_Text: '
+
+'
 --- !u!222 &2057091247
 CanvasRenderer:
   m_ObjectHideFlags: 0
