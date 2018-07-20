@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/General/Family.unity
-=======
-- path: Assets/Roubo.unity
->>>>>>> bd88b3b3895e37898daf8cfe9b7f13ab70ee6dcf
   isLoaded: 1
   isActive: 1

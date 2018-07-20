@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Family : MonoBehaviour {
@@ -22,10 +23,13 @@ public class Family : MonoBehaviour {
 
     float timeLeft;
     float time = 5;
+    int rentCost;
 
-	// Use this for initialization
-	void Start () {
-        int rentCost = Random.Range(100, 500);
+    public string SceneContinueDay;
+
+    // Use this for initialization
+    void Start () {
+        rentCost = Random.Range(100, 500);
         rent.text = rentCost.ToString();
 
         timeLeft = Time.deltaTime;
@@ -67,21 +71,45 @@ public class Family : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         PlayerPrefs.SetInt("nAlive", (needsToBeAlive));
+        PlayerPrefs.SetInt("dividas", 0);
     }
 
     public void PayCosts()
     {
         if(bankAccount.Money >= cost)
         {
+            bankAccount.Money -= cost;
             Cost.text = 0.ToString();
             txtNeeds.text = "------------------------------------------------";
             needsToBeAlive = 1;
-        } else
-        {
-            alerts.text = "You don't Have Money to do that!";
-           
+        } else {
+            time++;
+            alerts.text = "You don't Have Money to do that";
         }
         
+    }
+
+    public void payRent()
+    {
+        if (bankAccount.Money >= rentCost)
+        {
+            bankAccount.Money -= cost;
+            Cost.text = 0.ToString();
+            needsToBeAlive = 1;
+            PlayerPrefs.SetInt("dividas", 0);
+        }
+        else
+        {
+            alerts.text = "You don't Have Money to pay rent";
+            PlayerPrefs.SetInt("dividas", +1);
+        }
+    }
+
+    public void continueDay()
+    {
+
+        SceneManager.LoadScene(SceneContinueDay);
+
     }
 
 }
