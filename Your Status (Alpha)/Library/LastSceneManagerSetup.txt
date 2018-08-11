@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Intro.unity
-=======
-- path: Assets/lipe coisas/CARA NA FRENTE de casa/mapa.unity
->>>>>>> 320fcccd6000b9184b807aa41b80c7a25e0d6905
+- path: Assets/Roubo.unity
   isLoaded: 1
   isActive: 1
