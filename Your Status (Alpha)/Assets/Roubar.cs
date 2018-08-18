@@ -12,6 +12,7 @@ public class Roubar : MonoBehaviour {
     public GameObject VisaoFrente;
     public GameObject VisaoLado;
     public GameObject Texto;
+    public GameObject ImagemTexto;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +34,7 @@ public class Roubar : MonoBehaviour {
             // o Goal (que seria o alvo) tem uma colisão
 
             Texto.SetActive(true);
+            ImagemTexto.SetActive(true);
             //se o Jogador encostar nessa colisao, um texto dizendo como pegar itens surgira
 
             if (Input.GetKeyDown(KeyCode.P))
@@ -46,6 +48,7 @@ public class Roubar : MonoBehaviour {
                 canwin = true;
                 //o player agora pode sair da loja
                 Texto.SetActive(false);
+                ImagemTexto.SetActive(false);
                 //o texto explicativo ira sumir
             }
         }

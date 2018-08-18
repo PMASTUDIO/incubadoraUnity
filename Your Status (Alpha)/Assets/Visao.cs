@@ -8,6 +8,7 @@ public class Visao : MonoBehaviour {
     public GameObject Alertsong;
     public GameObject AlertSound;
     public GameObject falaguarda;
+    public GameObject textbox;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +33,7 @@ public class Visao : MonoBehaviour {
             Alertsong.SetActive(false);
             falaguarda.SetActive(true);
             AlertSound.SetActive(true);
+            textbox.SetActive(true);
             // esses GameObjects sao so sons e a fala do guarda
         }
 

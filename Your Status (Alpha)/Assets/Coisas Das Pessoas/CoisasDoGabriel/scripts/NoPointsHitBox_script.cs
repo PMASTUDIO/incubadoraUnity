@@ -17,7 +17,6 @@ public class NoPointsHitBox_script : MonoBehaviour {
 	public void play()
 	{
 		AudioSource lol = gameObject.GetComponent<AudioSource> ();
-        //Esse som vai tocar quando o jogador errar uma bola(quando ela tocar na parte vermelha da sprite)
-        lol.Play ();
+		lol.Play ();
 	}
 }
