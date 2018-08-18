@@ -23,7 +23,7 @@ public class DayEnd : MonoBehaviour {
         if((this.transform.position.x >= (XpositionToWin - 2) && this.transform.position.x <= (XpositionToWin + 2)) && (this.transform.position.y >= (XpositionToWin - 2) && this.transform.position.y <= (XpositionToWin + 2)))
         {
             Debug.Log("ShowPanel");
-            dayCounterScriptObject.showPanel = true;
+            dayCounterScriptObject.enabled = true;
         }
 	}
 
