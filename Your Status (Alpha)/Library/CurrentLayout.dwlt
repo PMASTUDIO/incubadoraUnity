@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 109
+  controlID: 80
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 110
+  controlID: 61
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 111
+  controlID: 62
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,35 +323,35 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/lipe coisas/CARA NA FRENTE de casa
+    - Assets/Scenes/Quests/Assalto
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/lipe coisas/CARA NA FRENTE de casa
+  - Assets/Scenes/Quests/Assalto
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\SuperGeek8\Documents\GitHub\incubadoraUnity\Your Status
+  m_LastProjectPath: C:\Users\SuperGeek3\Documents\GitHub\incubadoraUnity\Your Status
     (Alpha)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: 3e340000
-    m_LastClickedID: 13374
-    m_ExpandedIDs: 000000006631000074310000fa3100004e320000703200001a3300003e340000f43400002a360000583600000647000000ca9a3b
+    scrollPos: {x: 0, y: 343}
+    m_SelectedIDs: 24300000
+    m_LastClickedID: 12324
+    m_ExpandedIDs: 00000000ac2c0000be2c0000662d0000ba2d0000f22d0000e02e00004c2f000024300000383000001a31000070320000b03200008843000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Sistemas
-      m_OriginalName: Sistemas
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13634
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -365,7 +365,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066310000fa3100004e3200003e340000f43400002a36000006470000
+    m_ExpandedIDs: 00000000ac2c0000be2c0000662d0000ba2d0000f22d0000e02e0000383000001a31000070320000b032000088430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,10 +480,10 @@ MonoBehaviour:
     height: 443
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 6}
-    m_SelectedIDs: 
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 6a300000
     m_LastClickedID: 0
-    m_ExpandedIDs: 603ffeff545cfeff966dfeffb66efeffb0f0ffff3cf6ffff00000000144800008c54000034560000405b0000d65b000096630000
+    m_ExpandedIDs: a6e3ffff5af7ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,7 +502,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-  - mapa
+  - Assalto(teste)
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -533,14 +533,14 @@ MonoBehaviour:
     height: 443
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 0
+  lastFramingTime: 189.7672688536572
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -445.28812, y: 46.5295, z: 2.859375}
+    m_Target: {x: -4.5291934, y: -1.0331384, z: 29.337294}
     speed: 2
-    m_Value: {x: -445.28812, y: 46.5295, z: 2.859375}
+    m_Value: {x: -4.5291934, y: -1.0331384, z: 29.337294}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -572,15 +572,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 30.148739
+    m_Target: 44.573547
     speed: 2
-    m_Value: 30.148739
+    m_Value: 44.573547
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.26403913, y: -0.6528005, z: 0.26104158, w: 0.6602971}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -685,8 +685,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
+    x: 0
+    y: 556
+    width: 1274
+    height: 282
   m_PersistentViewDataDictionary: {fileID: 0}

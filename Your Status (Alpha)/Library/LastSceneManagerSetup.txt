@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/lipe coisas/CARA NA FRENTE de casa/mapa.unity
+- path: Assets/Scenes/Quests/Assalto/Assalto(teste).unity
   isLoaded: 1
   isActive: 1
