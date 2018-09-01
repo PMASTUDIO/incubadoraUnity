@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Roubo.unity
+- path: Assets/lipe coisas/CARA NA FRENTE de casa/mapa.unity
   isLoaded: 1
   isActive: 1
