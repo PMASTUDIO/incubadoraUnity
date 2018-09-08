@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Quests/Assalto/Assalto_Tutorial.unity
+=======
+- path: Assets/Scenes/General/menu.unity
+>>>>>>> 7bf769e0f775ceed434611e4e6302bce1ddd2151
   isLoaded: 1
   isActive: 1
