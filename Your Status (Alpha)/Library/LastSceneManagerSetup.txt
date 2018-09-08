@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Quests/Assalto/Assalto(teste).unity
+  isLoaded: 1
+  isActive: 1
