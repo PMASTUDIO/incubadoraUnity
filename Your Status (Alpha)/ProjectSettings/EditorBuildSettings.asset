@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/General/Family.unity
     guid: 48f482156ad2e604c923b9f49f565134
+  - enabled: 1
+    path: Assets/lipe coisas/CARA NA FRENTE de casa/mapa.unity
+    guid: 995cdb6ec9fb1c94e9fc9ed7e484e24e
   m_configObjects: {}
