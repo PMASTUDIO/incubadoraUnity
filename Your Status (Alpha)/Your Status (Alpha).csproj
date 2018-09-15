@@ -257,10 +257,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/SuperGeeks4/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/SuperGeek8/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/SuperGeeks4/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/SuperGeek8/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -319,6 +319,7 @@
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\Ballscript.cs" />
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\jogadorminigamevenda.cs" />
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\NoPointsHitBox_script.cs" />
+    <Compile Include="Assets\DontDestroyThings.cs" />
     <Compile Include="Assets\GeneralBehaviors.cs" />
     <Compile Include="Assets\Jogador.cs" />
     <Compile Include="Assets\lipe coisas\CARA NA FRENTE de casa\converça com os amigos.cs" />
@@ -339,6 +340,7 @@
     <Compile Include="Assets\Sistemas\Deliver\Deliver.cs" />
     <Compile Include="Assets\Sistemas\Família\Family.cs" />
     <Compile Include="Assets\Sistemas\Família\General.cs" />
+    <Compile Include="Assets\Sistemas\Menu\Menu.cs" />
     <Compile Include="Assets\Sistemas\Money\MoneyGeneral.cs" />
     <Compile Include="Assets\Sistemas\MovimentoPersonagemPrincipal\Andar.cs" />
     <Compile Include="Assets\Sistemas\Progress\DayCounter.cs" />
