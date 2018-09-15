@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 39
+  controlID: 112
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 40
+  controlID: 113
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 41
+  controlID: 114
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,15 +252,15 @@ MonoBehaviour:
     y: 0
     width: 950
     height: 454
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,21 +323,21 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Quests/Assalto/SpritesAssalto
+    - Assets/Roubo
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Quests/Assalto/SpritesAssalto
+  - Assets/Roubo
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\SuperGeek8\Documents\GitHub\incubadoraUnity\Your Status
     (Alpha)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 481}
-    m_SelectedIDs: 662c0000
-    m_LastClickedID: 11366
-    m_ExpandedIDs: 00000000de2b0000f42b0000b62c00000e2d0000442d00003a2e0000d02e0000ba2f0000ce2f0000ea3000005a3200009c3200006035000000ca9a3b
+    scrollPos: {x: 0, y: 253}
+    m_SelectedIDs: b2300000
+    m_LastClickedID: 12466
+    m_ExpandedIDs: 00000000de2b0000f42b0000b62c00000e2d0000442d00003a2e0000d02e0000422f0000be2f0000d62f0000f63000006a320000ac320000a635000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +365,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de2b0000f42b0000b62c00000e2d0000442d00003a2e0000d02e0000ba2f0000ce2f0000ea3000005a3200009c32000060350000
+    m_ExpandedIDs: 00000000de2b0000f42b0000b62c00000e2d0000442d00003a2e0000d02e0000be2f0000d62f0000f63000006a320000ac320000a6350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,29 +480,29 @@ MonoBehaviour:
     height: 433
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 656}
-    m_SelectedIDs: 94faffff
-    m_LastClickedID: -1388
-    m_ExpandedIDs: 94faffff1afbffff00000000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b2300000
+    m_LastClickedID: 0
+    m_ExpandedIDs: fea2ffffa4abffffa0b5ffff52b9ffff5cc0ffff22c4ffffc6c7fffff6caffff1afbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: crowd
+      m_OriginalName: crowd
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -1350
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Assalto(teste)
+  - Deliver
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -614,17 +614,17 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -473
-    m_HBaseRangeMax: 473
-    m_VBaseRangeMin: -208
-    m_VBaseRangeMax: 208
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -633,7 +633,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -644,7 +644,7 @@ MonoBehaviour:
       y: 17
       width: 946
       height: 416
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 0.38518515, y: 0.38518518}
     m_Translation: {x: 473, y: 208}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -652,12 +652,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -473
-      y: -208
-      width: 946
-      height: 416
+      x: -1227.9808
+      y: -540
+      width: 2455.9617
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.38518518
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 946, y: 433}
