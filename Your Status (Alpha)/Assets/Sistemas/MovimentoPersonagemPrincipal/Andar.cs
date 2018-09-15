@@ -10,6 +10,7 @@ public class Andar : MonoBehaviour {
     private float xscale;
     private float yscale;
     private float velocidadeTmp;
+    private bool stop;
 
     public bool running = false;
     // basicamente, se vc apertar SHIFT essa função vai virar positiva.
@@ -112,8 +113,8 @@ public class Andar : MonoBehaviour {
                 gameObject.GetComponent<Animator>().Play("WalkingSide");
                 //aqui a animacao vai ser correndo
             }
-        }
 
+        }
         else
         {
             gameObject.GetComponent<Animator>().Play("Idle");
@@ -136,4 +137,9 @@ public class Andar : MonoBehaviour {
             //se o jogador for visto, canmove sera falso, portanto ele nao podera se mecher
         }
     }
-}
+        void OnCollisionEnter(Collision collision) {
+
+            if (collision.gameObject.tag == "prediob") ;
+            canmove = false;
+        }
+    }
