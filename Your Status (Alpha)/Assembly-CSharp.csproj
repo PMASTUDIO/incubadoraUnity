@@ -64,6 +64,7 @@
      <Compile Include="Assets\lipe coisas\menu\animação botões.cs" />
      <Compile Include="Assets\Roubar.cs" />
      <Compile Include="Assets\Roubo\Scripts\ScriptGuarda.cs" />
+     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Arrow_script.cs" />
      <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Bullet_script.cs" />
      <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Cashier_script.cs" />
      <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Hostage_script.cs" />

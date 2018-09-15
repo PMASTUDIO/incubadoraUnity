@@ -1,16 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Coisas Das Pessoas/CoisasDoGabriel/scenes/Intro.unity
-=======
-<<<<<<< HEAD
-- path: Assets/GanmeCoisas/Deliver.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Quests/Assalto/Assalto_Tutorial.unity
-=======
 - path: Assets/Scenes/General/menu.unity
->>>>>>> 7bf769e0f775ceed434611e4e6302bce1ddd2151
->>>>>>> bf89e9171a92f9ea3fd309fe047a19f83d16df98
->>>>>>> a3016635adafe634f0f2da397f0fbec7672b2b02
   isLoaded: 1
   isActive: 1

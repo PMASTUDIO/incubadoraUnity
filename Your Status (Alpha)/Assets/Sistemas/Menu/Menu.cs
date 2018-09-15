@@ -17,12 +17,27 @@ public class Menu : MonoBehaviour {
 
     public void Play()
     {
-        SceneManager.LoadScene("Intro");
+        if (PlayerPrefs.HasKey("intro"))
+        {
+            SceneManager.LoadScene("mapa");
+
+        } else
+        {
+            SceneManager.LoadScene("Intro");
+            PlayerPrefs.SetInt("intro", 0);
+        }
+        
     }
 
     public void Exit()
     {
         Application.Quit();
+    }
+
+
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
     }
 
 }
