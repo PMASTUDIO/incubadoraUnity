@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vault_scipt : MonoBehaviour {
 
+    public searchbar_script search;
     public bool permission = true;
     public int health = 3; 
     public bool tplayer = false;
@@ -33,6 +34,13 @@ public class Vault_scipt : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 startcountdown = true;
+                search.permission = true;
+                
+            }
+
+            if (startcountdown == true)
+            {
+                search.Search(3.0f);
             }
 
             if (Input.GetKeyUp(KeyCode.Q))
