@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class textgameobject_sript : MonoBehaviour {
@@ -37,20 +38,40 @@ public class textgameobject_sript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (stringIndex == 11)
         {
-            if (characterIndex < strings[stringIndex].Length)
+            skip();
+        }
+        try
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                characterIndex = strings[stringIndex].Length;
+
+
+                if (characterIndex < (strings[stringIndex].Length-1))
+                {
+                    characterIndex = strings[stringIndex].Length;
+                }
+                else
+                {
+                    stringIndex++;
+                    characterIndex = 0;
+                }
+
             }
-            else if (stringIndex < strings.Length)
-            {
-                stringIndex++;
-                characterIndex = 0;
-            }
+
+        }
+        catch (System.IndexOutOfRangeException ex)
+        {
+            skip();
+    
         }
 
 
+}
 
-	}
+    public void skip()
+    {
+        SceneManager.LoadScene("mapa");
+    }
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/General/menu.unity
+- path: Assets/Coisas Das Pessoas/CoisasDoGabriel/scenes/Intro.unity
   isLoaded: 1
   isActive: 1
