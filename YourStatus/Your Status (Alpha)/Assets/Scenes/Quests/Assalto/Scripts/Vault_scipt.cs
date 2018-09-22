@@ -20,9 +20,12 @@ public class Vault_scipt : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
         if (startcountdown == true && password == true)
         {
+            GameObject.Find("MainCharacter").GetComponent<PlayerAssalto_script>().searchbarOn();
             searchtime -= Time.deltaTime;
+            search.Search(1.75f);
         }
         else if (startcountdown == true && password == false)
         {
@@ -38,15 +41,14 @@ public class Vault_scipt : MonoBehaviour {
                 
             }
 
-            if (startcountdown == true)
-            {
-                search.Search(3.0f);
-            }
-
             if (Input.GetKeyUp(KeyCode.Q))
             {
                 startcountdown = false;
                 searchtime = 6;
+                if (password == true)
+                {
+                    GameObject.Find("MainCharacter").GetComponent<PlayerAssalto_script>().searchOff();
+                }
             }
         }
 

@@ -17,11 +17,15 @@ public class PlayerAssalto_script : MonoBehaviour {
     public float moneyadd = 0;
     public float money = 0;
     public float minmoney = 600;
+    public Image searchbar;
+    public Image backgroundsearchbar;
 
 	// Use this for initialization
 	void Start () {
         t.text = "";
         result.text = "";
+        searchbar.enabled = false;
+        backgroundsearchbar.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -134,6 +138,18 @@ public class PlayerAssalto_script : MonoBehaviour {
         prejuizo = Random.Range(1, 6);
 
         time -= prejuizo;
+    }
+
+    public void searchbarOn()
+    {
+        searchbar.enabled = true;
+        backgroundsearchbar.enabled = true;
+    }
+
+    public void searchOff()
+    {
+        searchbar.enabled = false;
+        backgroundsearchbar.enabled = false;
     }
 
 }
