@@ -313,18 +313,26 @@
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\Ballscript.cs" />
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\jogadorminigamevenda.cs" />
     <Compile Include="Assets\Coisas Das Pessoas\CoisasDoGabriel\scripts\NoPointsHitBox_script.cs" />
+    <Compile Include="Assets\DontDestroyThings.cs" />
     <Compile Include="Assets\GeneralBehaviors.cs" />
     <Compile Include="Assets\Jogador.cs" />
     <Compile Include="Assets\lipe coisas\CARA NA FRENTE de casa\converça com os amigos.cs" />
     <Compile Include="Assets\lipe coisas\menu\animação botões.cs" />
     <Compile Include="Assets\Roubar.cs" />
     <Compile Include="Assets\Roubo\Scripts\ScriptGuarda.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Arrow_script.cs" />
+>>>>>>> 859f231ced52af172e7dc76ee30b089b94494ba0
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Bullet_script.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Cashier_script.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Hostage_script.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\PasswordTable_script.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\PlayerAssalto_script.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\searchbar_script.cs" />
+=======
+>>>>>>> 859f231ced52af172e7dc76ee30b089b94494ba0
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Sniper_script.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Table.cs" />
     <Compile Include="Assets\Scenes\Quests\Assalto\Scripts\Vault_scipt.cs" />
@@ -333,6 +341,7 @@
     <Compile Include="Assets\Sistemas\Deliver\Deliver.cs" />
     <Compile Include="Assets\Sistemas\Família\Family.cs" />
     <Compile Include="Assets\Sistemas\Família\General.cs" />
+    <Compile Include="Assets\Sistemas\Menu\Menu.cs" />
     <Compile Include="Assets\Sistemas\Money\MoneyGeneral.cs" />
     <Compile Include="Assets\Sistemas\MovimentoPersonagemPrincipal\Andar.cs" />
     <Compile Include="Assets\Sistemas\Progress\DayCounter.cs" />
