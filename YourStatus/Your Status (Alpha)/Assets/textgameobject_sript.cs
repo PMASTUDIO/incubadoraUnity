@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class textgameobject_sript : MonoBehaviour {
@@ -27,8 +28,7 @@ public class textgameobject_sript : MonoBehaviour {
             if (characterIndex > strings[stringIndex].Length)
             {
                 continue;
-            }
-
+            } 
             textArea.text = strings[stringIndex].Substring(0, characterIndex);
             characterIndex++;
         }
@@ -47,10 +47,15 @@ public class textgameobject_sript : MonoBehaviour {
             {
                 stringIndex++;
                 characterIndex = 0;
-            }
+            } 
         }
 
 
 
 	}
+
+    public void Skip()
+    {
+        SceneManager.LoadScene("mapa");
+    }
 }

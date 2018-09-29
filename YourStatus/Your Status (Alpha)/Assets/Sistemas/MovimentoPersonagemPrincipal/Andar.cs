@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Andar : MonoBehaviour {
 	public Rigidbody2D self;
-	public float velocidade;
+	public Vector2 velocidade;
     public float velocidadeCorrendo;
     public bool canmove = true;
     private float xscale;
     private float yscale;
-    private float velocidadeTmp;
+    private Vector2 velocidadeTmp;
 
     public bool running = false;
     // basicamente, se vc apertar SHIFT essa função vai virar positiva.
 	
     // Use this for initialization
 	void Start () {
-        velocidadeTmp = velocidade;
+        velocidadeTmp = Vector2.zero;
 		self = GetComponent<Rigidbody2D>();
         xscale = transform.localScale.x;
         yscale = transform.localScale.y;
@@ -34,7 +34,7 @@ public class Andar : MonoBehaviour {
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 running = true;
-                velocidade = velocidadeCorrendo;
+                velocidade.x = velocidadeCorrendo;
                 //se segurar o shift esquerdo,o jogador estara correndo
             }
 
@@ -49,13 +49,15 @@ public class Andar : MonoBehaviour {
         {
             gameObject.GetComponent<Animator>().Play("Idle");
         }
+
+
     }
 
     void Move()
     {
         if (Input.GetAxis("Vertical") > 0)
         {
-            self.transform.position += new Vector3(0, velocidade / 100, 0) * Time.deltaTime;
+            GetComponent<Rigidbody2D>().velocity = velocidade;
             if (running == false)
             {
                 gameObject.GetComponent<Animator>().Play("JogadorAndandoFrente");
@@ -70,7 +72,7 @@ public class Andar : MonoBehaviour {
         }
         else if (Input.GetAxis("Vertical") < 0)
         {
-            self.transform.position -= new Vector3(0, velocidade / 100, 0) * Time.deltaTime;
+            self.GetComponent<Rigidbody2D>().velocity -= new Vector2(0, velocidade.y / 100) * Time.deltaTime;
             if (running == false)
             {
                 gameObject.GetComponent<Animator>().Play("PlayerAndando");
@@ -86,7 +88,7 @@ public class Andar : MonoBehaviour {
         else if (Input.GetAxis("Horizontal") > 0)
         {
             self.transform.localScale = new Vector3(xscale, yscale, 0);
-            self.transform.position += new Vector3(velocidade / 100, 0, 0) * Time.deltaTime;
+            self.GetComponent<Rigidbody2D>().velocity += new Vector2(velocidade.y / 100, 0) * Time.deltaTime;
             if (running == false)
             {
                 gameObject.GetComponent<Animator>().Play("PlayerAndandoLado");
@@ -101,7 +103,7 @@ public class Andar : MonoBehaviour {
         else if (Input.GetAxis("Horizontal") < 0)
         {
             self.transform.localScale = new Vector3(-xscale, yscale, 0);
-            self.transform.position -= new Vector3(velocidade / 100, 0, 0) * Time.deltaTime;
+            self.GetComponent<Rigidbody2D>().velocity -= new Vector2(velocidade.x / 100, 0) * Time.deltaTime;
             if (running == false)
             {
                 gameObject.GetComponent<Animator>().Play("PlayerAndandoLado");
